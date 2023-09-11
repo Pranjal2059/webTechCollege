@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TVSCHEDULE[
+<!ELEMENT TVSCHEDULE (Channel+)>
+<!ELEMENT channel (banner, day+)>
+<!ELEMENT banner (#PCDATA)>
+<!ELEMENT day (date, (holiday | programslot)+)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT programslot (time, title, description?)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST TVSCHEDULE Name CDATA #REQUIRED>
+<!ATTLIST channel Chan CDATA #REQUIRED>
+<!ATTLIST programslot Vtr #IMPLIED>
+<!ATTLIST title 
+Rating CDATA #IMPLIED
+Language CDATA #IMPLIED
+>
+]>
+<TVSCHEDULE Name="SampleTVSchedule">
+    <Channel Chan="Discovery Channel">
+        <banner>Discovery Channel Banner</banner>
+        <day>
+            <date>2023-09-11</date>
+            <programslot>
+                <time>10:00 AM</time>
+                <title>Documentary 1</title>
+            </programslot>
+            <programslot>
+                <time>11:00 AM</time>
+                <title>Documentary 2</title>
+                <description>Description for Documentary 2</description>
+            </programslot>
+        </day>
+    </Channel>
+</TVSCHEDULE>
