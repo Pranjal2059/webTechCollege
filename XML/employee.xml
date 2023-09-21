@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="employee.xsl" type="text/xsl"?>
+<employees>
+    <emp>
+        <name>Sonam</name>
+        <department>Human Resource</department>
+        <job-title>Manager</job-title>
+        <salary>25000</salary>
+        <email>sonam21@gmail.com</email>
+    </emp>
+    <emp>
+        <name>Aananda</name>
+        <department>Managing Department</department>
+        <job-title>Assistant</job-title>
+        <salary>20000</salary>
+        <email>aananda781@gmail.com</email>
+    </emp>
+</employees>
